@@ -1,0 +1,19 @@
+version: 1.0
+runtime: nodejs12
+build:
+  commands:
+    build:
+      - npm install --production
+  env:
+    - name: FOO
+      value: "bar"
+
+run:
+  runtime-version: 12.18.4
+  command: node server.js   # required
+  network:
+    port: 8080
+    env: AWS_PORT
+  env:
+    - name: FOO
+      value: "bar"
