@@ -3,10 +3,7 @@ runtime: nodejs12
 build:
   commands:
     build:
-      - npm install --production
-  env:
-    - name: FOO
-      value: "bar"
+      - npm install
 
 run:
   runtime-version: 12.18.4
@@ -14,6 +11,3 @@ run:
   network:
     port: 8080
     env: AWS_PORT
-  env:
-    - name: FOO
-      value: "bar"
