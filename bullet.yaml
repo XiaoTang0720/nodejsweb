@@ -4,9 +4,8 @@ build:
   commands:
     build:
       - npm install
-
 run:
-  runtime-version: 12.18.4
+  runtime-version: 12.19.0
   command: node server.js   # required
   network:
     port: 8080
